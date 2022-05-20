@@ -1,23 +1,5 @@
-# Tax Categories
+# Documentation moved to Terraform
 
-Tax Categories define how products are to be taxed in different countries.
+Find the new version of the documentation on the [the Terraform registry docs](https://registry.terraform.io/providers/labd/commercetools/latest/docs/resources/tax_category):
 
-Also see the [tax categories HTTP API documentation][commercetool-tax-categories].
-
-## Example Usage
-
-```hcl
-resource "commercetools_tax_category" "standard" {
-  name = "Standard tax category"
-}
-```
-
-## Argument Reference
-
-The following arguments are supported:
-
-* `name` - Name of the tax category
-* `key` - (Optional) User-specific unique identifier for the category
-* `description` - (Optional) Description of the tax category
-
-[commercetool-tax-categories]: https://docs.commercetools.com/http-api-projects-taxCategories.html
+ [https://registry.terraform.io/providers/labd/commercetools/latest/docs/resources/tax_category](https://registry.terraform.io/providers/labd/commercetools/latest/docs/resources/tax_category).
