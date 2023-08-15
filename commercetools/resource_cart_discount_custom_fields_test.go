@@ -14,7 +14,7 @@ func TestAccCartDiscount_CustomField(t *testing.T) {
 	resource.Test(t, resource.TestCase{
 		PreCheck:     func() { testAccPreCheck(t) },
 		Providers:    testAccProviders,
-		CheckDestroy: testAccCheckChannelDestroy,
+		CheckDestroy: testAccCheckCartDiscountDestroy,
 		Steps: []resource.TestStep{
 			{
 				Config: testAccNewCartDiscountConfigWithCustomField(),
