@@ -19,7 +19,7 @@ func TestAccCartDiscount_CustomField(t *testing.T) {
 			{
 				Config: testAccNewCartDiscountConfigWithCustomField(),
 				Check: resource.ComposeTestCheckFunc(
-					resource.TestCheckResourceAttr(resourceName, "key", "test"),
+					resource.TestCheckResourceAttr(resourceName, "key", "cart_discount_with_custom_fields"),
 					func(s *terraform.State) error {
 						result, err := testGetCartDiscount(s, resourceName)
 						if err != nil {
@@ -102,7 +102,7 @@ func testAccNewCartDiscountConfigWithCustomField() string {
 		}
 
 		resource "commercetools_cart_discount" "test" {
-			key = "test"
+			key = "cart_discount_with_custom_fields"
 			name = {
 				en = "test-cart-discount"
 			}
